@@ -68,7 +68,7 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.DrawGroupsBorder = false;
+            this.ribbonControl1.DrawGroupsBorderMode = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -90,7 +90,6 @@
             this.btnFind,
             this.btnReviewFind});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 28;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -103,14 +102,14 @@
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages;
             this.ribbonControl1.ShowQatLocationSelector = false;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1392, 128);
+            this.ribbonControl1.Size = new System.Drawing.Size(1179, 102);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // btnPack
             // 
             this.btnPack.Caption = "Packing";
             this.btnPack.Id = 1;
-            this.btnPack.LargeGlyph = global::TotalCommandder.Properties.Resources.packIcon;
+            this.btnPack.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.packIcon;
             this.btnPack.Name = "btnPack";
             this.btnPack.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPack_ItemClick);
             // 
@@ -118,7 +117,7 @@
             // 
             this.btnUnPack.Caption = "UnPacking";
             this.btnUnPack.Id = 2;
-            this.btnUnPack.LargeGlyph = global::TotalCommandder.Properties.Resources.unpackIcon;
+            this.btnUnPack.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.unpackIcon;
             this.btnUnPack.Name = "btnUnPack";
             this.btnUnPack.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUnPack_ItemClick);
             // 
@@ -132,7 +131,7 @@
             // 
             this.chkOneScreen.Caption = "One Screen";
             this.chkOneScreen.Id = 7;
-            this.chkOneScreen.LargeGlyph = global::TotalCommandder.Properties.Resources.oneScreenIcon;
+            this.chkOneScreen.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.oneScreenIcon;
             this.chkOneScreen.Name = "chkOneScreen";
             this.chkOneScreen.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.chkOneScreen_ItemClick);
             // 
@@ -142,7 +141,7 @@
             this.chkTwoScreen.Caption = "Two Screen";
             this.chkTwoScreen.Checked = true;
             this.chkTwoScreen.Id = 8;
-            this.chkTwoScreen.LargeGlyph = global::TotalCommandder.Properties.Resources.twoScreenIcon;
+            this.chkTwoScreen.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.twoScreenIcon;
             this.chkTwoScreen.Name = "chkTwoScreen";
             this.chkTwoScreen.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.chkTwoScreen_CheckedChanged);
             this.chkTwoScreen.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.chkTwoScreen_ItemClick);
@@ -152,7 +151,7 @@
             this.btnCopy.Caption = "Copy";
             this.btnCopy.Enabled = false;
             this.btnCopy.Id = 1;
-            this.btnCopy.LargeGlyph = global::TotalCommandder.Properties.Resources.copy_32x32;
+            this.btnCopy.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.copy_32x32;
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCopy_ItemClick);
             // 
@@ -161,7 +160,7 @@
             this.btnCut.Caption = "Cut";
             this.btnCut.Enabled = false;
             this.btnCut.Id = 2;
-            this.btnCut.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnCut.LargeGlyph")));
+            this.btnCut.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCut.ImageOptions.LargeImage")));
             this.btnCut.Name = "btnCut";
             this.btnCut.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCut_ItemClick);
             // 
@@ -170,7 +169,7 @@
             this.btnPaste.Caption = "Paste";
             this.btnPaste.Enabled = false;
             this.btnPaste.Id = 3;
-            this.btnPaste.LargeGlyph = global::TotalCommandder.Properties.Resources.paste_32x32;
+            this.btnPaste.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.paste_32x32;
             this.btnPaste.Name = "btnPaste";
             this.btnPaste.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPaste_ItemClick);
             // 
@@ -179,23 +178,23 @@
             this.btnRename.Caption = "Rename";
             this.btnRename.Enabled = false;
             this.btnRename.Id = 5;
-            this.btnRename.LargeGlyph = global::TotalCommandder.Properties.Resources.rename;
+            this.btnRename.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.rename;
             this.btnRename.Name = "btnRename";
             this.btnRename.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRename_ItemClick);
             // 
             // btnSelectAll
             // 
             this.btnSelectAll.Caption = "Select All";
-            this.btnSelectAll.Glyph = global::TotalCommandder.Properties.Resources.selecttable_32x32;
             this.btnSelectAll.Id = 6;
+            this.btnSelectAll.ImageOptions.Image = global::TotalCommandder.Properties.Resources.selecttable_32x32;
             this.btnSelectAll.Name = "btnSelectAll";
             this.btnSelectAll.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSelectAll_ItemClick);
             // 
             // btnNoneSelect
             // 
             this.btnNoneSelect.Caption = "None Select";
-            this.btnNoneSelect.Glyph = global::TotalCommandder.Properties.Resources.no_border_32x32;
             this.btnNoneSelect.Id = 7;
+            this.btnNoneSelect.ImageOptions.Image = global::TotalCommandder.Properties.Resources.no_border_32x32;
             this.btnNoneSelect.Name = "btnNoneSelect";
             this.btnNoneSelect.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNoneSelect_ItemClick);
             // 
@@ -204,7 +203,7 @@
             this.btnDelete.Caption = "Delete";
             this.btnDelete.Enabled = false;
             this.btnDelete.Id = 13;
-            this.btnDelete.LargeGlyph = global::TotalCommandder.Properties.Resources.cancel_32x32;
+            this.btnDelete.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.cancel_32x32;
             this.btnDelete.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnRecycleDelete),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnPermanentlyDelete)});
@@ -213,16 +212,16 @@
             // btnRecycleDelete
             // 
             this.btnRecycleDelete.Caption = "Recycle";
-            this.btnRecycleDelete.Glyph = global::TotalCommandder.Properties.Resources.recycleBinIcon;
             this.btnRecycleDelete.Id = 14;
+            this.btnRecycleDelete.ImageOptions.Image = global::TotalCommandder.Properties.Resources.recycleBinIcon;
             this.btnRecycleDelete.Name = "btnRecycleDelete";
             this.btnRecycleDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRecycleDelete_ItemClick);
             // 
             // btnPermanentlyDelete
             // 
             this.btnPermanentlyDelete.Caption = "Permanently Delete";
-            this.btnPermanentlyDelete.Glyph = global::TotalCommandder.Properties.Resources.delete_16x16;
             this.btnPermanentlyDelete.Id = 15;
+            this.btnPermanentlyDelete.ImageOptions.Image = global::TotalCommandder.Properties.Resources.delete_16x16;
             this.btnPermanentlyDelete.Name = "btnPermanentlyDelete";
             this.btnPermanentlyDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPermanentlyDelete_ItemClick);
             // 
@@ -230,7 +229,7 @@
             // 
             this.btnNotepad.Caption = "Notepad";
             this.btnNotepad.Id = 16;
-            this.btnNotepad.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNotepad.LargeGlyph")));
+            this.btnNotepad.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnNotepad.ImageOptions.LargeImage")));
             this.btnNotepad.Name = "btnNotepad";
             this.btnNotepad.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNotepad_ItemClick);
             // 
@@ -238,7 +237,7 @@
             // 
             this.btnFind.Caption = "Find";
             this.btnFind.Id = 23;
-            this.btnFind.LargeGlyph = global::TotalCommandder.Properties.Resources.find_32x32;
+            this.btnFind.ImageOptions.LargeImage = global::TotalCommandder.Properties.Resources.find_32x32;
             this.btnFind.Name = "btnFind";
             this.btnFind.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFind_ItemClick);
             // 
@@ -246,9 +245,9 @@
             // 
             this.btnReviewFind.Caption = "Review Find";
             this.btnReviewFind.Enabled = false;
-            this.btnReviewFind.Glyph = ((System.Drawing.Image)(resources.GetObject("btnReviewFind.Glyph")));
             this.btnReviewFind.Id = 24;
-            this.btnReviewFind.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnReviewFind.LargeGlyph")));
+            this.btnReviewFind.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReviewFind.ImageOptions.Image")));
+            this.btnReviewFind.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnReviewFind.ImageOptions.LargeImage")));
             this.btnReviewFind.Name = "btnReviewFind";
             this.btnReviewFind.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReviewFind_ItemClick);
             // 
@@ -291,9 +290,10 @@
             this.toolStripStatusLabel4,
             this.toolStripStatusLabel5,
             this.toolStripStatusLabel7});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 748);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 606);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1392, 25);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1179, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -301,7 +301,7 @@
             // 
             this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
             this.toolStripStatusLabel6.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(133, 20);
+            this.toolStripStatusLabel6.Size = new System.Drawing.Size(116, 17);
             this.toolStripStatusLabel6.Text = "Enter Open";
             // 
             // toolStripStatusLabel1
@@ -309,51 +309,53 @@
             this.toolStripStatusLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(132, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(115, 17);
             this.toolStripStatusLabel1.Text = "F2 Rename";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(139, 20);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(123, 17);
             this.toolStripStatusLabel2.Text = "Ctrl+C Copy";
             // 
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(127, 20);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(113, 17);
             this.toolStripStatusLabel3.Text = "Ctrl+X Cut";
             // 
             // toolStripStatusLabel4
             // 
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
             this.toolStripStatusLabel4.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(139, 20);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(122, 17);
             this.toolStripStatusLabel4.Text = "Ctrl+V Paste";
             // 
             // toolStripStatusLabel5
             // 
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
             this.toolStripStatusLabel5.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(183, 20);
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(156, 17);
             this.toolStripStatusLabel5.Text = "Ctrl+N New Folder";
             // 
             // toolStripStatusLabel7
             // 
             this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
             this.toolStripStatusLabel7.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.toolStripStatusLabel7.Size = new System.Drawing.Size(211, 20);
+            this.toolStripStatusLabel7.Size = new System.Drawing.Size(174, 17);
             this.toolStripStatusLabel7.Text = "Delete -> Delete Items";
             // 
             // splitMain
             // 
             this.splitMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitMain.Location = new System.Drawing.Point(0, 128);
+            this.splitMain.Location = new System.Drawing.Point(0, 102);
+            this.splitMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitMain.Name = "splitMain";
-            this.splitMain.Size = new System.Drawing.Size(1392, 620);
-            this.splitMain.SplitterDistance = 696;
+            this.splitMain.Size = new System.Drawing.Size(1179, 504);
+            this.splitMain.SplitterDistance = 589;
+            this.splitMain.SplitterWidth = 3;
             this.splitMain.TabIndex = 4;
             // 
             // timer
@@ -363,18 +365,17 @@
             // Form1
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1392, 773);
+            this.ClientSize = new System.Drawing.Size(1179, 628);
             this.Controls.Add(this.splitMain);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.ribbonControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimumSize = new System.Drawing.Size(1404, 779);
+            this.MinimumSize = new System.Drawing.Size(1364, 726);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "My Total Commander - 15520994";
+            this.Text = "My Total Commander";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
@@ -420,4 +421,3 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
     }
 }
-
